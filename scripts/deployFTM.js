@@ -4,7 +4,7 @@ const ethers = hre.ethers;
 async function main() {
   //deploy 'HelperSPIRIT' contract;
   const HelperSPIRIT = await ethers.getContractFactory("HelperSPIRIT");
-  const helperSPIRIT = await HelperSPIRIT.deploy("'0x5cc61a78f164885776aa610fb0fe1257df78e59b'"); // address of the SPIRIT
+  const helperSPIRIT = await HelperSPIRIT.deploy("0x5cc61a78f164885776aa610fb0fe1257df78e59b"); // address of the SPIRIT
   await helperSPIRIT.deployed();
 
   //deploy 'HelperWFTM' contract;

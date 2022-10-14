@@ -13,19 +13,19 @@ module.exports = {
   solidity: "0.8.1",
 
   networks: {
-    ethereum: {
+    mainnet: {
       url: "https://goerli.infura.io/v3/ded5ffb90fc547529254973ad8341755",
       accounts: [KEY],
     },
-    fantom: {
+     ftmTestnet: {
       url: "https://fantom-testnet.blastapi.io/54420425-7b5d-4ff9-85b2-456a574bd98c",
       accounts: [KEY],
     },
   },
   etherscan: {
     apiKey: {
-      ether: ETHERSCAN,
-      ftm: FTMSCAN,
-    },
-  },
+      mainnet: ETHERSCAN,
+       ftmTestnet: FTMSCAN,
+    }
+  }
 };
