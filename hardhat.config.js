@@ -6,26 +6,51 @@ require("@nomiclabs/hardhat-etherscan");
 require("dotenv").config();
 
 const KEY = process.env.SECRET_KEY;
+// Providers
+const ETH_PROV = process.env.ETH_PROV_API;
+const FTM_PROV = process.env.FTM_PROV_API;
+const MUM_PROV = process.env.MUM_PROV_API;
+const AVAX_PROV = process.env.AVAX_PROV_API;
+const BSC_PROV = process.env.BSC_;
+// Keys of scans
 const ETHERSCAN = process.env.ETHERSCAN_API_KEY;
 const FTMSCAN = process.env.FTMSCAN_API_KEY;
+const MUMBAI = process.env.MUMBAI_API_KEY;
+const AVAX = process.env.AVAX_API_KEY;
+const BSC = process.env.BSC_API_KEY;
 
 module.exports = {
   solidity: "0.8.1",
 
   networks: {
     mainnet: {
-      url: "https://goerli.infura.io/v3/ded5ffb90fc547529254973ad8341755",
+      url: ETH_PROV,
       accounts: [KEY],
     },
-     ftmTestnet: {
-      url: "https://fantom-testnet.blastapi.io/54420425-7b5d-4ff9-85b2-456a574bd98c",
+    ftmTestnet: {
+      url: FTM_PROV,
+      accounts: [KEY],
+    },
+    polygonMumbai: {
+      url: MUM_PROV,
+      accounts: [KEY],
+    },
+    avalancheFujiTestnet: {
+      url: AVAX_PROV,
+      accounts: [KEY],
+    },
+    bscTestnet: {
+      url: BSC_PROV,
       accounts: [KEY],
     },
   },
   etherscan: {
     apiKey: {
       mainnet: ETHERSCAN,
-       ftmTestnet: FTMSCAN,
-    }
-  }
+      ftmTestnet: FTMSCAN,
+      polygonMumbai: MUMBAI,
+      avalancheFujiTestnet: AVAX,
+      bscTestnet: BSC,
+    },
+  },
 };
