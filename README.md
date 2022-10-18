@@ -1,8 +1,8 @@
 # 09/13/2022 - Smart contracts for monitoring the price of tokens.
---
+---
 **Smart contracts of the prices** - **preserved** prices of tokens, **setting** with the help of **script** _PyScript_.
 
--- 
+--- 
 ___Tokens___:
 >_(Ethereum)_
 > + CRV;
