@@ -34,8 +34,8 @@ ___Tokens___:
 
 In this project using **"Yarn"**.
 
-**yarn build** - for _compile_ contracts;
-**yarn prettier** - for code _formatting_;
+> + **yarn build** - for _compile_ contracts;
+> + **yarn prettier** - for code _formatting_;
 
 ---
 
