@@ -35,11 +35,11 @@ ___Tokens___:
 
 In this project using **"Yarn"**.
 
-> **yarn init -y** - for install the _Yarn_;
-> **yarn install** - installs all _dependencies_;
-> **yarn build** - for _compile_ contracts;
-> **yarn prettier** - for code _formatting_;
-> **yarn test**  - for _testing_ contracts;
+> + **yarn init -y** - for install the _Yarn_;
+> + **yarn install** - installs all _dependencies_;
+> + **yarn build** - for _compile_ contracts;
+> + **yarn prettier** - for code _formatting_;
+> + **yarn test**  - for _testing_ contracts;
 
 > **yarn hardhat run scripts/script.js --network 'name'** - for _deploying_ smart contracts in _networks_;
 > + **'script.js'** - _deploy.js/ deployAVAX.js/ deployBSC.js/ deployFTM.js/ deployMUMBAI.js_;
