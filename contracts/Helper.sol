@@ -6,21 +6,24 @@ import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
 
 /**
  * @author by CTAPCKPIM
- * @title Helper for monitoring the price of 'ORBS' token.
+ * @title Helper for monitoring the price of tokens.
  * @notice Accepts and sets the value of the token in 'USD' through the script.
  */
-contract HelperORBS {
+contract Helper {
     /**
      * All variables:
      *  {priceUSD} - price of the token;
-     *  {addrORBS} - address of the token;
+     *  {nameToken} - name of the token;
+     *  {addrToken} - address of the token;
      */
     uint256 public priceUSD;
-    address public addrORBS;
+    string public nameToken;
+    address public addrToken;
 
-    //@dev Setting an address of the 'ORBS' token in deploy;
-    constructor(address _addrORBS) {
-        addrORBS = _addrORBS;
+    //@dev Setting an address of the token in deploy;
+    constructor(address _addrToken, string memory _nameToken) {
+        addrToken = _addrToken;
+        nameToken = _nameToken;
     }
 
     //@dev Setting the price;
@@ -30,11 +33,11 @@ contract HelperORBS {
 
     //@return `symbol` of the token;
     function returnSymbol() public view returns (string memory) {
-        return IERC20Metadata(addrORBS).symbol();
+        return IERC20Metadata(addrToken).symbol();
     }
 
     //@return `name` of the token;
     function returnName() public view returns (string memory) {
-        return IERC20Metadata(addrORBS).name();
+        return IERC20Metadata(addrToken).name();
     }
 }

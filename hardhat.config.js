@@ -23,7 +23,7 @@ module.exports = {
   solidity: "0.8.1",
 
   networks: {
-    mainnet: {
+    goerli: {
       url: ETH_PROV,
       accounts: [KEY],
     },
@@ -46,7 +46,7 @@ module.exports = {
   },
   etherscan: {
     apiKey: {
-      mainnet: ETHERSCAN,
+      goerli: ETHERSCAN,
       ftmTestnet: FTMSCAN,
       polygonMumbai: MUMBAI,
       avalancheFujiTestnet: AVAX,
