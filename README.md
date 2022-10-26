@@ -61,7 +61,7 @@ In this project using **"Yarn"**.
 
 >  Don't forget to add the keys in  _.env_
 
-    ```
+```
     SECRET_KEY = <private key(MetaMask)>
     ETH_PROV_API =  <the provider(infura)>
     FTM_PROV_API =  <the provider(blastapi)>
@@ -73,4 +73,4 @@ In this project using **"Yarn"**.
     MUMBAI_API_KEY = <key from polygonscan>
     AVAX_API_KEY = <key from snowtrace>
     BSC_API_KEY = <key from bscscan>
-    ```
+```
